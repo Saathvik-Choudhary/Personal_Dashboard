@@ -1,0 +1,55 @@
+# --- Secrets (Phase 0: added before any secret exists — see spec §12) ---
+# Repo is public: never commit real credentials, tokens, or keys.
+.env
+.env.*
+!.env.example
+*.local
+# Google service-account JSON (daemon) and any credential files
+**/service-account*.json
+**/*-credentials.json
+**/serviceAccountKey.json
+**/*.serviceaccount.json
+secrets/
+
+# Private keys, certificates and tokens of any kind
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+*.keystore
+id_rsa*
+*.token
+*token.json
+.npmrc
+.netrc
+
+# --- Dependencies ---
+node_modules/
+.pnpm-store/
+
+# --- Build output ---
+dist/
+lib/
+.next/
+out/
+*.tsbuildinfo
+
+# --- Turbo ---
+.turbo/
+
+# --- Firebase ---
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# --- Daemon runtime ---
+daemon/daemon.log
+daemon/daemon.err.log
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
