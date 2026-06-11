@@ -1,0 +1,29 @@
+{
+  "name": "@orbit/functions",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Firebase Cloud Functions (2nd gen) — always-on cheap delivery + approval (spec §10).",
+  "type": "module",
+  "main": "lib/index.js",
+  "engines": { "node": "20" },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "serve": "pnpm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions",
+    "clean": "rm -rf lib *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0",
+    "fast-xml-parser": "^4.5.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.1.0",
+    "googleapis": "^144.0.0",
+    "twilio": "^5.3.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.2",
+    "@types/node": "^20.16.5"
+  }
+}

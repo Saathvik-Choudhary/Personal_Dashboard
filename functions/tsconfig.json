@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "declaration": false,
+    "declarationMap": false,
+    // Typecheck only (the real build is esbuild). Bundler resolution lets tsc resolve the
+    // workspace package via a path alias and tolerates the .js-extension ESM imports.
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@orbit/core": ["../packages/core/dist/index.d.ts"]
+    }
+  },
+  "references": [{ "path": "../packages/core" }],
+  "include": ["src/**/*"]
+}
