@@ -1,0 +1,24 @@
+{
+  "name": "@orbit/daemon",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mac M1 local daemon — runs the token-heavy Claude jobs in the 4–9am window (spec §9).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node dist/index.js",
+    "run-once": "node dist/index.js --force",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@orbit/core": "workspace:*",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "@types/node": "^20.16.5"
+  }
+}
