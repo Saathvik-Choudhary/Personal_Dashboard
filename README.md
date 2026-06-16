@@ -2,6 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Discussions](https://img.shields.io/badge/💬-discussions-blue.svg)](https://github.com/Saathvik-Choudhary/Personal_Dashboard/discussions)
 
+🔗 **[Live demo →](https://travel-like-ap.web.app)**
+
+![Orbit dashboard](docs/dashboard.png)
+
 A personal command center on a Firestore core, with a shared Claude intelligence layer. Built
 from [`orbit-build-spec.md`](orbit-build-spec.md). Everything reads and writes Firestore; two
 compute layers act on it (always-on Cloud Functions + a 4–9am Mac daemon), and the dashboard is a
