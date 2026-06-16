@@ -1,5 +1,7 @@
 # Orbit
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Discussions](https://img.shields.io/badge/💬-discussions-blue.svg)](https://github.com/Saathvik-Choudhary/Personal_Dashboard/discussions)
+
 A personal command center on a Firestore core, with a shared Claude intelligence layer. Built
 from [`orbit-build-spec.md`](orbit-build-spec.md). Everything reads and writes Firestore; two
 compute layers act on it (always-on Cloud Functions + a 4–9am Mac daemon), and the dashboard is a
@@ -147,6 +149,18 @@ No credentials are committed to this repository. All secrets live outside versio
 
 If you fork this repo, rotate any key you ever paste locally and confirm `git status` never lists
 `.env` before pushing.
+
+## 💬 Feedback & Contributing
+
+This project is actively evolving and **your opinion matters**. You don't have to write
+code to help — telling me what you think is the most valuable thing you can do.
+
+- 💡 [Share feedback or an idea](https://github.com/Saathvik-Choudhary/Personal_Dashboard/issues/new?template=feedback.md)
+- 💬 [Start a Discussion](https://github.com/Saathvik-Choudhary/Personal_Dashboard/discussions) — questions, ideas, first impressions
+- 🐞 [Report a bug](https://github.com/Saathvik-Choudhary/Personal_Dashboard/issues/new?template=bug_report.md)
+- ⭐ Star the repo if you find it useful — it helps others discover it
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
 ## License
 
